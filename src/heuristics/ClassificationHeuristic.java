@@ -18,7 +18,7 @@ public class ClassificationHeuristic {
 	 * @param P set of record pairs
 	 * @param K set of input blocking keys
 	 * @param ts target training set size
-	 * @param beta influences the thresholds for classifying the input pairs as match or non match 
+	 * @param beta parameter used to influence the thresholds for classifying the input pairs as match or non match 
 	 * @param blockingGraphUpdateStrategy strategy to update the extended blocking graph
 	 * @return
 	 */
