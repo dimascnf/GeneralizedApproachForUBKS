@@ -1,7 +1,15 @@
 # GeneralizedApproachForUBKS
 Java implementation of a Generalized Approach for Unsupervised Bblocking Key Selection.
 
-- **Source Code**: src/
+- **Proposed Optimzed Metaheuric**: src/heuristic/GeneralizedMetaheuristic
+  
+- - **Proposed Sampling Method**: src/heuristic/SamplingMethod
+
+- - **Proposed Classification Heuristic**: src/heuristic/ClassificationHeuristic
+ 
+- - **Competitor**: src/competitors/LearnOptimalBK
+ 
+- - **Greedy UBKS Approach  **: src/competitors/GreedyUBKS
 
 - **Datasets**: datasets/
 
