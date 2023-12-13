@@ -104,7 +104,6 @@ public class ClassificationHeuristic {
 				pair.setPositiveWeight(truePositiveRateSum);
 				
 				Set<String> notCommonBKs = new HashSet<String>();
-				//all bk names
 				notCommonBKs.addAll(BKtrueNegativeRates.keySet());
 				notCommonBKs.removeAll(pair.getCommonBKs());
 				
