@@ -33,6 +33,6 @@ Java implementation of a Generalized Approach for Unsupervised Bblocking Key Sel
 
 | P | K | ts | beta | blockingGraphUpdateStrategy | 
 | :-----: | :---: | :---: | :-----: | :-----: | 
-| set of record pairs | input set of blocking keys | parameter used to influence the thresholds for classifying the input pairs as match or non match | strategy to update the extended blocking graph (default: ENTIRE_TRAINING_SET) | 
+| set of record pairs | input set of blocking keys | target training set size | parameter used to influence the thresholds for classifying the input pairs as match or non match | strategy to update the extended blocking graph (default: ENTIRE_TRAINING_SET) | 
 
 - **Classification Heuristic Output**: training set (containing ts training examples)
