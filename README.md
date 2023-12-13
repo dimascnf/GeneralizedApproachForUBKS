@@ -3,13 +3,13 @@ Java implementation of a Generalized Approach for Unsupervised Bblocking Key Sel
 
 - **Proposed Optimzed Metaheuric**: src/heuristic/GeneralizedMetaheuristic
   
-- - **Proposed Sampling Method**: src/heuristic/SamplingMethod
+- **Proposed Sampling Method**: src/heuristic/SamplingMethod
 
-- - **Proposed Classification Heuristic**: src/heuristic/ClassificationHeuristic
+- **Proposed Classification Heuristic**: src/heuristic/ClassificationHeuristic
  
-- - **Competitor**: src/competitors/LearnOptimalBK
+- **Competitor**: src/competitors/LearnOptimalBK
  
-- - **Greedy UBKS Approach  **: src/competitors/GreedyUBKS
+- **Greedy UBKS Approach**: src/competitors/GreedyUBKS
 
 - **Datasets**: datasets/
 
