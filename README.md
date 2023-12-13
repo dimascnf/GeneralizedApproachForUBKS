@@ -9,16 +9,22 @@ Java implementation of a Generalized Approach for Unsupervised Bblocking Key Sel
 
 | Datasets | K | trainingSet | C | goal | Psi |
 | :-----: | :---: | :---: | :-----: | :---: | :---: | 
-| dataset(s) to be processed | input set of blocking keys | training examples  | blocking key combination criteria | blocking goal | set of blocking restrictions |
+| dataset(s) to be processed (set of records) | input set of blocking keys | training examples  | blocking key combination criteria | blocking goal | set of blocking restrictions |
+
+- **Optimized Metaheuristic Output**: optimized blocking schema 
 
 - **Sampling Method Parameters**: 
 
-| Repetitions Per Instance | Optimal Execution Time Divisor | Number of Iterations | Number of Instances | 
-| :-----: | :---: | :---: | :-----: | 
-| Number of Repetitions | Time restriction (in relation to exact approach time)  | Number of ILS iterations  | default: 94 | 
+| Datasets | K | ts | Number of Instances | v |
+| :-----: | :---: | :---: | :-----: | :-----: | 
+| dataset(s) to be processed (set of records) | input set of blocking keys  | target sampling size  | number of blocking key set variations on each similarity level |
+
+- **Sampling Method Output**: set of record pairs (containing ts record pairs)
 
 - **Classification Heuristic Parameters**: 
 
-| Repetitions Per Instance | Optimal Execution Time Divisor | Number of Iterations | Number of Instances | 
-| :-----: | :---: | :---: | :-----: | 
-| Number of Repetitions | Time restriction (in relation to exact approach time)  | Number of ILS iterations  | default: 94 | 
+| P | K | ts | beta | blockingGraphUpdateStrategy | 
+| :-----: | :---: | :---: | :-----: | :-----: | 
+| set of record pairs | input set of blocking keys | parameter used to influence the thresholds for classifying the input pairs as match or non match | strategy to update the extended blocking graph (default: ENTIRE_TRAINING_SET) | 
+
+- **Classification Heuristic Output**: training set (containing ts training examples)
