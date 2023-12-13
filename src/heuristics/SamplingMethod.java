@@ -21,8 +21,8 @@ public class SamplingMethod {
 	 * Sampling method for selecting record pairs to compose the training sets.
 	 * @param dataset (set of records)
 	 * @param K set of blocking keys 
-	 * @param ts target training set size
-	 * @param v  number of blocking key set variations on each similarity level
+	 * @param ts target sampling size
+	 * @param v number of blocking key set variations on each similarity level
 	 * @return set of record pairs
 	 */
 public Set<RecordPair> sampling(Dataset[] datasets, Set<BlockingKey> K, int ts, int v, double alpha){
