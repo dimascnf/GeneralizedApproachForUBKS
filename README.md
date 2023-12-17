@@ -1,7 +1,7 @@
 # GeneralizedApproachForUBKS
 Java implementation of a Generalized Approach for Unsupervised Bblocking Key Selection.
 
-- **Proposed Optimzed Metaheuric**: src/heuristic/GeneralizedMetaheuristic
+- **Proposed Optimzed Metaheuristic**: src/heuristic/GeneralizedMetaheuristic
   
 - **Proposed Sampling Method**: src/heuristic/SamplingMethod
 
