@@ -24,7 +24,7 @@ Java implementation of a Generalized Approach for Unsupervised Bblocking Key Sel
 - **Sampling Method Parameters**: 
 
 | Datasets | K | ts | v |
-| :-----: | :---: | :---: | :-----: | :-----: | 
+| :-----: | :---: | :---: | :-----: |
 | dataset(s) to be processed (set of records) | input set of blocking keys  | target sampling size  | number of blocking key set variations on each similarity level |
 
 - **Sampling Method Output**: set of record pairs (containing ts record pairs)
