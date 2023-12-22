@@ -15,7 +15,7 @@ import traininset.TrainingSet;
 public class LearnOptimalBK {
 	
 	public BlockingScheme learnOptimalBKForCustomScenario(Dataset[] datasets, HashSet<BlockingKey> K,
-			TrainingSet trainingSet, int numberOfKeys, 
+			TrainingSet trainingSet, int numberOfKeys, int nm, 
 			BlockingKeyCombinationCriteria c,
 			GenericBlockingGoal goal) {
 		
@@ -30,6 +30,16 @@ public class LearnOptimalBK {
 		
 		BlockingScheme s = new BlockingScheme();
 		s.setCriteria(c);
+		
+		//Remove the blocking keys from K that cover more than nm record pairs in trainingSet.getNegativeSet()
+		for (BlockingKey key: K) {
+			int coveredPairs = 0;
+			for (RecordPair pair: trainingSet.getNegativeSet())
+				if (key.isCovered(pair))
+					coveredPairs++;
+			if (coveredPairs >= nm)
+				K.remove(key);
+		}
 		
 		for (int i=0; i<numberOfKeys; i++) {
 			

@@ -1,4 +1,4 @@
-package staticconter;
+package staticcounter;
 
 
 public class StaticCounter {

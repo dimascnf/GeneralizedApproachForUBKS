@@ -15,7 +15,7 @@ import blockingscheme.BlockingScheme;
 import record.Dataset;
 import record.Record;
 import record.RecordPair;
-import staticconter.StaticCounter;
+import staticcounter.StaticCounter;
 import traininset.TrainingSet;
 
 public class BlockingRestrictionImplementations {
