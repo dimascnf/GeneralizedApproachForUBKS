@@ -35,14 +35,17 @@ public class LearnOptimalBK {
 		s.setCriteria(c);
 		
 		//Remove the blocking keys from K that cover more than nm record pairs in trainingSet.getNegativeSet()
+		HashSet<BlockingKey> keysToRemove = new HashSet<BlockingKey>();
 		for (BlockingKey key: K) {
 			int coveredPairs = 0;
 			for (RecordPair pair: trainingSet.getNegativeSet())
 				if (key.isCovered(pair))
 					coveredPairs++;
 			if (coveredPairs >= nm)
-				K.remove(key);
+				keysToRemove.add(key);
 		}
+		for (BlockingKey k : keysToRemove)
+			keysToRemove.add(k);
 		
 		for (int i=0; i<numberOfKeys; i++) {
 			
