@@ -3,7 +3,7 @@ package blockingkey;
 import org.apache.commons.codec.language.Soundex;
 import record.Record;
 /**
- * Blocking keys employed in the experimental evaluation 
+ * Blocking keys employed in the experimental evaluation.
  */
 public class EmployedBlockingKeys {
 	

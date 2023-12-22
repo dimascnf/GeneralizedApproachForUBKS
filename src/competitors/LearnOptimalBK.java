@@ -13,7 +13,7 @@ import record.RecordPair;
 import traininset.TrainingSet;
 
 /**
- * Competitor algorithm
+ * Competitor UBKS algorithm.
  */
 public class LearnOptimalBK {
 	
