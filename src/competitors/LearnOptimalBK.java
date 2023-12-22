@@ -12,6 +12,9 @@ import record.Dataset;
 import record.RecordPair;
 import traininset.TrainingSet;
 
+/**
+ * Competitor algorithm
+ */
 public class LearnOptimalBK {
 	
 	public BlockingScheme learnOptimalBKForCustomScenario(Dataset[] datasets, HashSet<BlockingKey> K,
