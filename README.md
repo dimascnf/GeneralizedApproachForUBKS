@@ -12,6 +12,8 @@ Java implementation of a Generalized Approach for Unsupervised Bblocking Key Sel
 - **Greedy UBKS Approach**: src/competitors/GreedyUBKS
 
 - **Datasets**: datasets/
+  
+- **Blocking Keys Employed in the Experimental Evaluation**: srs/blockingkey/EmployedBlockingKeys
 
 - **Optimized Metaheuristic Parameters**: 
 
