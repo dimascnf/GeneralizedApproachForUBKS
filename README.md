@@ -1,5 +1,5 @@
 # GeneralizedApproachForUBKS
-Java implementation of a Generalized Approach for Unsupervised Bblocking Key Selection.
+Java implementation of a Generalized Approach to Perform Unsupervised Blocking Key Selection for Entity Resolution.
 
 - **Proposed Optimzed Metaheuristic**: src/heuristic/GeneralizedMetaheuristic
   
@@ -12,6 +12,8 @@ Java implementation of a Generalized Approach for Unsupervised Bblocking Key Sel
 - **Greedy UBKS Approach**: src/competitors/GreedyUBKS
 
 - **Datasets**: datasets/
+  
+- **Blocking Keys Employed in the Experimental Evaluation**: srs/blockingkey/EmployedBlockingKeys
 
 - **Optimized Metaheuristic Parameters**: 
 
