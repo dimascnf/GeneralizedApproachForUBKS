@@ -98,7 +98,22 @@ private static void generateBKsForNCV() {
 	BKFunction<Record,String> f10 = r -> ((String) r.getRecordAttributes().get("postcode")).substring(0,5);
 	BKFunction<Record,String> f11 = r -> ((String) r.getRecordAttributes().get("postcode")).substring(0,3);
 	BKFunction<Record,String> f12 = r -> ((String) r.getRecordAttributes().get("postcode")).substring(0,4);
-	}
+}
+
+private static void generateBKsForDS100k() {
+	BKFunction<Record,String> f1 = r -> ((String) r.getRecordAttributes().get("given_name")).substring(0, 3);
+	BKFunction<Record,String> f2 = r -> ((String) r.getRecordAttributes().get("given_name")).split(" ")[0];
+	BKFunction<Record,String> f3 = r -> ((String) r.getRecordAttributes().get("given_name")).substring(0, 2);
+	BKFunction<Record,String> f4 = r -> ((String) r.getRecordAttributes().get("surname")).substring(0, 3);
+	BKFunction<Record,String> f5 = r -> ((String) r.getRecordAttributes().get("surname")).substring(0, 2);
+	BKFunction<Record,String> f6 = r -> ((String) r.getRecordAttributes().get("address_1")).substring(0, 3);
+	BKFunction<Record,String> f7 = r -> ((String) r.getRecordAttributes().get("address_2")).substring(0, 2);
+	BKFunction<Record,String> f8 = r -> ((String) r.getRecordAttributes().get("soc_sec_id")).substring(0,3);
+	BKFunction<Record,String> f9 = r -> ((String) r.getRecordAttributes().get("age")).substring(0,2);
+	BKFunction<Record,String> f10 = r -> ((String) r.getRecordAttributes().get("phone_number")).substring(0,3);
+	BKFunction<Record,String> f11 = r -> ((String) r.getRecordAttributes().get("soc_sec_id")).substring(0, 4);
+	BKFunction<Record,String> f12 = r -> ((String) r.getRecordAttributes().get("state")).substring(0,3);
+}
 
 
 }
